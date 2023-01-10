@@ -1,0 +1,8 @@
+ARG ELASTIC_APP
+ARG ELASTIC_VERSION
+
+FROM elastic/${ELASTIC_APP}:${ELASTIC_VERSION}
+# Fix file ownership
+USER root
+RUN chown -R 1000:1000 /usr/share/${ELASTIC_APP}
+USER 1000

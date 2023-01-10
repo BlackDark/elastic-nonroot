@@ -1,0 +1,9 @@
+version: "3"
+services:
+  apm:
+    build:
+      context: .
+      args:
+        - ELASTIC_APP=apm-server
+        - ELASTIC_VERSION=${ELASTIC_VERSION}
+    image: apm-nonroot:${ELASTIC_VERSION}
