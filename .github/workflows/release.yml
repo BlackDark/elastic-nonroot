@@ -6,8 +6,8 @@ jobs:
   example_matrix:
     strategy:
       matrix:
-        app: [apm-server]
-        version: [7.17.2]
+        app: [apm-server, heartbeat]
+        version: [7.17.8, 8.5.3]
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
