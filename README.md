@@ -1,3 +1,5 @@
+> This repository is archived.
+
 # Elastic images fully nonroot
 
 This repository just rebuilds existing elastic images and remove the `GID` requirement of `0`.
